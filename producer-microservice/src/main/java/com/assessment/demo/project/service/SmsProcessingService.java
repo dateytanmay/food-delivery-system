@@ -3,6 +3,7 @@ package com.assessment.demo.project.service;
 import com.assessment.demo.project.entity.SendMessage;
 import com.assessment.demo.project.repository.SendMessageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -10,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Async
 @Service
 class SmsProcessingService {
     @Autowired

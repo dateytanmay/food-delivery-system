@@ -34,7 +34,7 @@ public class KafkaConsumerService {
 
                 for (ConsumerRecord<String, String> record : records) {
                     try {
-                        // ✅ Parse JSON message
+
                         JsonNode jsonNode = objectMapper.readTree(record.value());
                         String ack_id = jsonNode.get("ack_id").asText();
                         Long accountId = jsonNode.get("account_id").asLong();
