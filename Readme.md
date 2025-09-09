@@ -9,7 +9,7 @@ This project is a scalable backend service for processing food delivery orders u
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/food-delivery-backend.git
+git clone https://github.com/dateytanmay/food-delivery-system.git
 cd food-delivery-backend
 2. Start MySQL
 If using Docker:
