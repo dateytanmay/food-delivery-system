@@ -32,6 +32,19 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 ###4. Run the application
 
 `mvn spring-boot:run`
+## SQL Schema
+
+`CREATE DATABASE IF NOT EXISTS food_delivery;
+USE food_delivery;
+CREATE TABLE orders (
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+customer_name VARCHAR(255) NOT NULL,
+items TEXT NOT NULL,
+total_amount DECIMAL(10,2) NOT NULL,
+order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+status VARCHAR(50) DEFAULT 'PENDING'
+);`
+
 
 ## API Endpoints
 ### 1. Place an Order
