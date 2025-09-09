@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS food_delivery;
+
+USE food_delivery;
+
+CREATE TABLE orders (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(255) NOT NULL,
+    items TEXT NOT NULL,
+    total_amount DECIMAL(10,2) NOT NULL,
+    order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(50) DEFAULT 'PENDING'
+);
