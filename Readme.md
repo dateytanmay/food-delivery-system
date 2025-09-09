@@ -29,7 +29,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
-###4. Run the application
+### 4. Run the application
 
 `mvn spring-boot:run`
 ## SQL Schema
